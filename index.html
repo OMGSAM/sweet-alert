@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetAlert Example</title>
+    <!-- Inclusion de SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- Bouton pour déclencher l'alerte -->
+    <button id="alertButton">Afficher une alerte</button>
+
+    <script>
+        // Récupérer le bouton
+        const button = document.getElementById('alertButton');
+
+        // Ajouter un événement au clic
+        button.addEventListener('click', () => {
+            // Afficher l'alerte SweetAlert
+            Swal.fire({
+                title: 'Reservation successful',
+                icon: 'success',
+            });
+        });
+    </script>
+</body>
+</html>
